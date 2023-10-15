@@ -1,2 +1,3 @@
+Sitemap: https://intromert.com/sitemap.xml
 User-agent: *
 Disallow:
