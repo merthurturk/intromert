@@ -15,8 +15,16 @@
 <section class="prose dark:prose-invert prose-zinc mx-auto hover:prose-a:text-rose-600">
     {{ $slot }}
 
-    <footer class="border-t border-zinc-200 mt-10 pb-5">
+    <footer class="mt-10 pb-5">
         {{ $footer ?? '' }}
+
+        <div class="border-t border-zinc-200 dark:border-zinc-700 pt-5 mt-10 flex gap-x-4 text-sm">
+            <div>Mert Hürtürk</div>
+            <div class="opacity-50">&mdash;</div>
+            <a target="_blank" href="https://x.com/merthurturk">X</a>
+            <a target="_blank" href="https://instagram.com/merthurturk">Instagram</a>
+            <a target="_blank" href="https://linkedin.com/in/merthurturk">LinkedIn</a>
+        </div>
     </footer>
 </section>
 </body>

@@ -31,10 +31,12 @@ render(function (View $view, $category, $slug) {
             <x-reflection-notice/>
         @endif
 
+        <div class="h-5"></div>
+
         @include($file['filePath'])
     </section>
 
-    <x-slot name="footer">
-        <p class="text-sm">This is published on {{ $file['date']->format('D M d, Y') }}</p>
-    </x-slot>
+    <div class="mt-5">
+        <p class="text-sm italic">This is published on {{ $file['date']->format('D M d, Y') }} under <a href="/entries/{{ $category }}">{{ $categoryTitle }}</a> category.</a></p>
+    </div>
 </x-layout>
