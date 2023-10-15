@@ -1,5 +1,5 @@
 <h1>W42 2023</h1>
-<p class="lead">2023 Oct 16 - 22 &bullet; Year progress: 78%</p>
+<p class="lead">2023 Oct 9 - 15 &bullet; Year progress: 78%</p>
 
 <h3>Highlights</h3>
 <ul>
