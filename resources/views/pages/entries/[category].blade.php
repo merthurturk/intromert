@@ -8,7 +8,11 @@ use function Laravel\Folio\render;
 render(function (View $view, $category) {
     $category = Str::slug($category);
 
-    return $view->with('entries', getEntries($category))
+    $entries = getEntries($category);
+
+    if ($entries->isEmpty()) abort(404);
+
+    return $view->with('entries', $entries)
         ->with('categoryTitle', Str::title(str_replace('-', ' ', $category)))
         ->with('categorySlug', $category);
 }); ?>
@@ -25,7 +29,7 @@ render(function (View $view, $category) {
             <x-reflection-notice :show-more-link="false"/>
         @endif
 
-        <ul>
+        <ul class="mt-10">
             @foreach ($entries as $eachEntry)
                 <li><a href="{{ $eachEntry['urlPath'] }}">{{ $eachEntry['title'] }}</a>
                     <small class="text-zinc-400">&mdash; {{ $eachEntry['date']->format('D M d, Y') }} / {{ $eachEntry['category'] }}</small>
