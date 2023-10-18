@@ -69,4 +69,4 @@
 
 <p>This article has been a chance for me to put my thoughts on paper, to clarify the methods and tools I've used over the years to address procrastination. It's a journey that I'm still on, and writing about it helps me understand it better. If any of these insights resonate with you or help you in any way, that's a bonus. But at its core, this is just a snapshot of my ongoing exploration into understanding and improving my own productivity habits. Here's to many more discoveries, both for me and for anyone else on a similar journey.</p>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1713509120496508986" />
+<x-join-conversation href="https://twitter.com/merthurturk/status/1714565071588729056" />
