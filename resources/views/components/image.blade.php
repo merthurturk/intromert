@@ -1,5 +1,5 @@
 @props(['src'])
 <figure>
     <img src="{{ $src }}"/>
-    <figcaption>{{ $slot }}</figcaption>
+    <figcaption class="text-center">{{ $slot }}</figcaption>
 </figure>

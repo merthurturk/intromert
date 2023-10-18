@@ -32,6 +32,8 @@
     There is nothing either good or bad but thinking makes it so.
 </x-blockquote>
 
+<x-join-conversation href="https://twitter.com/merthurturk/status/1713509120496508986"/>
+
 <section class="text-xs opacity-50">
     <p id="note1">1. <a href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method" target="_blank">The Eisenhower Method</a></p>
 </section>
