@@ -3,7 +3,7 @@
     <p>{{ $slot }}</p>
     <div class="-mt-5 opacity-50">
         &mdash;
-        @if(isset($href))
+        @if(!empty($href))
             <a href="{{ $href }}" target="_blank">{{ $author }}</a>
         @else
             {{ $author }}

@@ -11,6 +11,13 @@ render(fn (View $view) => $view->with('entries', getEntries()));
     <x-about/>
 
     <section>
+        <h3>Resources</h3>
+        <ul>
+            <li>Explore <a href="/quotes">Quotes</a> I love or snag a <a href="/quotes/random">Random Quote</a> I've referenced!</li>
+        </ul>
+    </section>
+
+    <section>
         <h3>Latest</h3>
         <ul>
             @foreach ($entries as $eachEntry)
