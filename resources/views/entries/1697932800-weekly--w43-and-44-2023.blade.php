@@ -24,4 +24,4 @@
     Progress, not perfection, is what we should be asking of ourselves.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1713509120496508986"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1718646767883878463"/>

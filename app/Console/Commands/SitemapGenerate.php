@@ -38,6 +38,7 @@ class SitemapGenerate extends Command
         $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
 
         $xml .= $this->getUrlTagString(config('app.url'), $latestCommitDate);
+        $xml .= $this->getUrlTagString(config('app.url') . '/quotes', $latestCommitDate);
 
         $categories = getCategories();
         foreach ($categories as $eachCategory) {
