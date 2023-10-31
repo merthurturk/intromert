@@ -31,25 +31,28 @@ class ExtractQuotes extends Command
      */
     public function handle()
     {
-        $bladeFiles = File::allFiles(resource_path('views/entries'));
+        $entries = getEntries();
         $blockquotes = [];
 
-        foreach ($bladeFiles as $file) {
-            $content = File::get($file->getPathname());
+        foreach ($entries as $eachEntry) {
+            $content = File::get(resource_path('views' . $eachEntry['filePath'] . '.blade.php'));
 
-            // Match all <x-blockquote> components
             preg_match_all('/<x-blockquote\s+author="([^"]+)"(?:\s+href="([^"]+)")?>([\s\S]*?)<\/x-blockquote>/', $content, $matches, PREG_SET_ORDER);
 
             foreach ($matches as $match) {
                 $blockquotes[] = [
                     'author' => $match[1] ?? null,
                     'href' => $match[2] ?? null,
-                    'content' => trim($match[3])
+                    'content' => trim($match[3]),
+                    'entry' => [
+                        'url' => $eachEntry['urlPath'],
+                        'title' => $eachEntry['title']
+                    ]
                 ];
             }
-
-            Cache::put('quotes', $blockquotes);
         }
+
+        Cache::put('quotes', $blockquotes);
 
         $this->line('All quotes from all entries (' . count($blockquotes) . ') cached successfully.');
     }

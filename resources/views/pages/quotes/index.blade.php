@@ -14,9 +14,7 @@ render(fn(View $view) => $view->with('quotes', \Illuminate\Support\Facades\Cache
 
     <section>
         @foreach ($quotes as $quote)
-            <x-blockquote :author="$quote['author']" :href="$quote['href']">
-                {{ $quote['content'] }}
-            </x-blockquote>
+            @include('partials.quote-reference')
         @endforeach
     </section>
 </x-layout>

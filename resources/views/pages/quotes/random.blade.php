@@ -15,8 +15,6 @@ render(fn(View $view) => $view->with('quote', $quotes[array_rand($quotes)]));
     </x-header>
 
     <section>
-        <x-blockquote :author="$quote['author']" :href="$quote['href']">
-            {{ $quote['content'] }}
-        </x-blockquote>
+        @include('partials.quote-reference')
     </section>
 </x-layout>
