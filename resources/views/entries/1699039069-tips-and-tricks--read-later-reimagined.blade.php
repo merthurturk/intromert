@@ -47,4 +47,4 @@
     <a href="https://www.icloud.com/shortcuts/948c75d951ce4017b9bd4196a814369f" target="_blank">&darr; Download this shortcut</a>
 </x-image>
 
-{{--<x-join-conversation href="https://twitter.com/merthurturk/status/1714565071588729056"/>--}}
+<x-join-conversation href="https://twitter.com/merthurturk/status/1720539061977239571"/>
