@@ -19,7 +19,7 @@ render(function (View $view, $category) {
 
 <x-layout>
     <x-header>
-        <div class="text-base font-medium">Viewing {{ $categoryTitle }} entries. <a href="/">See all</a></div>
+        <div class="text-base font-medium">Viewing {{ $categoryTitle }} category. <a href="/">See all</a></div>
     </x-header>
 
     <section>
