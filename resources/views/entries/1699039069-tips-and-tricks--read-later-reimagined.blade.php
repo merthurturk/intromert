@@ -15,6 +15,10 @@
 
 <p>That's when it clicked &mdash; why not drop these reads right into Apple Reminders? I gave them due dates, treating them like any other task. It made me think — is this article really worth my time? If yes, it got a spot in there.</p>
 
+<x-blockquote author="James Clear">
+    You do not rise to the level of your goals. You fall to the level of your systems.
+</x-blockquote>
+
 <p>Here's how I've nailed it down:</p>
 
 <ul>
