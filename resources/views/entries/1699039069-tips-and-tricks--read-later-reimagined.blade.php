@@ -22,7 +22,7 @@
 <p>Here's how I've nailed it down:</p>
 
 <ul>
-    <li><strong>For bookmarks:</strong> I skip 'em. Apple Safari is smart enough.</li>
+    <li><strong>For bookmarks:</strong> I skip them. Apple Safari is smart enough.</li>
     <li>
         <strong>For 'save for later':</strong>
         <ol>
