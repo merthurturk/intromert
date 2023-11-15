@@ -42,12 +42,12 @@ class SitemapGenerate extends Command
 
         $categories = getCategories();
         foreach ($categories as $eachCategory) {
-            $xml .= $this->getUrlTagString(config('app.url') . $eachCategory['urlPath'], $eachCategory['date']);
+            $xml .= $this->getUrlTagString(config('app.url') . $eachCategory->urlPath, $eachCategory->latestEntryDate);
         }
 
         $entries = getEntries();
         foreach ($entries as $eachEntry) {
-            $xml .= $this->getUrlTagString(config('app.url') . $eachEntry['urlPath'], $eachEntry['date']);
+            $xml .= $this->getUrlTagString(config('app.url') . $eachEntry->urlPath, $eachEntry->publishDate);
         }
 
         $xml .= '</urlset>';

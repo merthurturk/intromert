@@ -31,8 +31,8 @@ render(function (View $view, $category) {
 
         <ul class="mt-10">
             @foreach ($entries as $eachEntry)
-                <li><a href="{{ $eachEntry['urlPath'] }}">{{ $eachEntry['title'] }}</a>
-                    <small class="text-zinc-400">&mdash; {{ $eachEntry['date']->format('D M d, Y') }} / {{ $eachEntry['category'] }}</small>
+                <li><a href="{{ $eachEntry->urlPath }}">{{ $eachEntry->title }}</a>
+                    <small class="text-zinc-400">&mdash; {{ $eachEntry->publishDate->format('D M d, Y') }} / {{ $eachEntry->category }}</small>
                 </li>
             @endforeach
         </ul>

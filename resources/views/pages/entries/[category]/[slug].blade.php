@@ -1,42 +1,45 @@
 <?php
 
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
-use function App\convertToFileArray;
 use function Laravel\Folio\render;
 
 render(function (View $view, $category, $slug) {
-    $category = Str::slug($category);
     $slug = Str::slug($slug);
 
-    $file = File::glob(resource_path('views/entries') . "/*-{$category}--{$slug}.blade.php")[0] ?? null;
-    if (!$file) abort(404);
+    // todo: optimize/cache directory traversal for category retrieval
+    /** @var ?\App\CategoryDto $category */
+    $category = \App\getCategories()->filter(fn (\App\CategoryDto $c) => $c->slug() === $category)->first();
+    if (!$category) abort(404);
+    // todo: optimize/cache directory traversal for entry retrieval
+    $entries = \App\getEntries($category->slug());
+    /** @var ?\App\EntryDto $entry */
+    $entry = $entries->filter(fn(\App\EntryDto $e) => $e->slug() === $slug)->first();
+    if (!$entry) abort(404);
 
-    $file = convertToFileArray(new SplFileInfo($file));
-
-    return $view->with('file', $file)
-        ->with('categoryTitle', Str::title(str_replace('-', ' ', $category)));
+    return $view->with('entry', $entry)
+        ->with('category', $category);
 }); ?>
 
-<x-layout :title="$file['title']">
+<x-layout :title="$entry->title">
     <x-header>
-        <a href="/entries/{{ $category }}">{{ $categoryTitle }}</a>
+        <a href="/entries/{{ $category->slug() }}">{{ $category->title }}</a>
     </x-header>
 
     <section>
-        @if ($category === 'weekly')
+        @if ($category->slug() === 'weekly')
             <x-weekly-notice/>
-        @elseif ($category === 'reflection')
+        @elseif ($category->slug() === 'reflection')
             <x-reflection-notice/>
         @endif
 
         <div class="h-5"></div>
 
-        @include($file['filePath'])
+        @include($entry->filePath)
     </section>
 
     <div class="mt-5">
-        <p class="text-sm italic">This is published on {{ $file['date']->format('D M d, Y') }} under <a href="/entries/{{ $category }}">{{ $categoryTitle }}</a> category.</a></p>
+        <p class="text-sm italic">This is published on {{ $entry->publishDate->format('D M d, Y') }} under
+            <a href="/entries/{{ $category->slug() }}">{{ $category->title }}</a> category.</p>
     </div>
 </x-layout>

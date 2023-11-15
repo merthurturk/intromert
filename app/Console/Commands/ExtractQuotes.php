@@ -2,12 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
-use Symfony\Component\Process\Process;
-use function App\getCategories;
 use function App\getEntries;
 
 class ExtractQuotes extends Command
@@ -35,7 +32,7 @@ class ExtractQuotes extends Command
         $blockquotes = [];
 
         foreach ($entries as $eachEntry) {
-            $content = File::get(resource_path('views' . $eachEntry['filePath'] . '.blade.php'));
+            $content = File::get(resource_path('views' . $eachEntry->filePath . '.blade.php'));
 
             preg_match_all('/<x-blockquote\s+author="([^"]+)"(?:\s+href="([^"]+)")?>([\s\S]*?)<\/x-blockquote>/', $content, $matches, PREG_SET_ORDER);
 
@@ -45,8 +42,8 @@ class ExtractQuotes extends Command
                     'href' => $match[2] ?? null,
                     'content' => trim($match[3]),
                     'entry' => [
-                        'url' => $eachEntry['urlPath'],
-                        'title' => $eachEntry['title']
+                        'url' => $eachEntry->urlPath,
+                        'title' => $eachEntry->title
                     ]
                 ];
             }
