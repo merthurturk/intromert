@@ -78,4 +78,4 @@
     <li>Self-control must be observed physically. It must be embodied mentally. It must be rendered magisterially when our moment comes.</li>
 </ul>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1720539061977239571"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1747518035752095918"/>
