@@ -31,6 +31,8 @@ render(function (View $view, $category, $slug) {
             <x-weekly-notice/>
         @elseif ($category->slug() === 'reflection')
             <x-reflection-notice/>
+        @elseif ($category->slug() === 'books')
+            <x-books-notice/>
         @endif
 
         <div class="h-5"></div>
