@@ -49,4 +49,4 @@
     <li>Just live one day at a time and do your best today.</li>
 </ul>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1747518035752095918"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1748647662750969941"/>
