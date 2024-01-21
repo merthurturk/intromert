@@ -21,7 +21,7 @@ render(fn (View $view) => $view->with('entries', getEntries()));
         <h3>Latest</h3>
         <ul>
             @foreach ($entries as $eachEntry)
-                <li><a href="{{ $eachEntry->urlPath }}">{{ $eachEntry->title }}</a>
+                <li><a href="{{ $eachEntry->urlPath }}" class="capitalize">{{ $eachEntry->title }}</a>
                     <small class="text-zinc-400">&mdash; {{ $eachEntry->publishDate->format('D M d, Y') }} / {{ $eachEntry->category }}</small>
                 </li>
             @endforeach
