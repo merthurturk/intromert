@@ -136,4 +136,4 @@
     <li>In every case, giving more will get you more. Want to help yourself? Help others. Learn to start from that place, and that is how you will become the most useful version of yourself&mdash;to your family, to your friends, to your community, to your nation...and to the world.</li>
 </ul>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1748647662750969941"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1751639781820231957"/>
