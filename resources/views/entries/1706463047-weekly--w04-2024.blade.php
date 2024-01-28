@@ -22,4 +22,4 @@
     Discipline is the strongest form of self-love.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1748992146919559260"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1751670014162116752"/>
