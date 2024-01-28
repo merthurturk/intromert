@@ -12,7 +12,7 @@ render(fn(View $view) => $view->with('quotes', \Illuminate\Support\Facades\Cache
         </div>
     </x-header>
 
-    <section>
+    <section class="divide-y divide-gray-300">
         @foreach ($quotes as $quote)
             @include('partials.quote-reference')
         @endforeach
