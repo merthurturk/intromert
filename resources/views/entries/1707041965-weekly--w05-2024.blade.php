@@ -24,4 +24,4 @@
     Inaction breeds doubt and fear. Action breeds confidence and courage.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1751670014162116752"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1754100506857803792"/>
