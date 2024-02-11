@@ -37,7 +37,7 @@
     <li>When people with fixed mindset opt for success over growth, they're really trying to prove that they're special. Even superior.</li>
     <li>Lurking behind self-esteem of the fixed mindset is a simple question: If you're somebody when you're successful, what are you when you're unsuccessful?</li>
     <li>Failure has been transformed from an action (I failed) to an identity (I am a failure). This is especially true in the fixed mindset.</li>
-    <li>Failure can be a painful experience, but it doesn't define you. For people in growth mindset it's a problem to be faced, dealth with, and learned from.</li>
+    <li>Failure can be a painful experience, but it doesn't define you. For people in growth mindset it's a problem to be faced, dealt with, and learned from.</li>
     <li>Fixed mindset is a dead end.</li>
     <li>People with fixed mindset try to repair their self-esteem after a failure is by assigning blame or making excuses.</li>
     <li>Even geniuses have to work hard for their achievements.</li>
@@ -77,7 +77,7 @@
 </ol>
 
 <x-blockquote author="Carol S. Dweck, Mindset: Changing The Way You Think to Fulfil Your Potential">
-    It's for you to decide whether change is right for you now. Maybe it is, maybe it isn't. But either way, keep the growth mindset in your thoughts. Then, when you bump up agains obstacles, you can turn to it. It will always be there for you, showing you a path into the future.
+    It's for you to decide whether change is right for you now. Maybe it is, maybe it isn't. But either way, keep the growth mindset in your thoughts. Then, when you bump up against obstacles, you can turn to it. It will always be there for you, showing you a path into the future.
 </x-blockquote>
 
 <x-join-conversation href="https://twitter.com/merthurturk/status/1756645948430623187"/>
