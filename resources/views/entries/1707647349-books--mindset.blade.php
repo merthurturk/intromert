@@ -80,4 +80,4 @@
     It's for you to decide whether change is right for you now. Maybe it is, maybe it isn't. But either way, keep the growth mindset in your thoughts. Then, when you bump up agains obstacles, you can turn to it. It will always be there for you, showing you a path into the future.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1751639781820231957"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1756645948430623187"/>
