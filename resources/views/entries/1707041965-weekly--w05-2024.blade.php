@@ -1,5 +1,5 @@
 <h1>W05 2024</h1>
-<p class="lead">2024 Jan 22 - 28 &bullet; Year progress: 10%</p>
+<p class="lead">2024 Jan 29 - Feb 4 &bullet; Year progress: 10%</p>
 
 <h3>Highlights</h3>
 <ul>

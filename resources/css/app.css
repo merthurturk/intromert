@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+em[data-personal-highlight] {
+    @apply font-normal not-italic;
+    background: url('/assets/images/highlighter.svg');
+    margin: -6px -10px;
+    padding: 6px 10px;
+}
