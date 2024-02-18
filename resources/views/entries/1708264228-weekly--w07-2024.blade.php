@@ -34,4 +34,4 @@
     If one advances confidently in the direction of his dreams, and endeavors to live the life which he has imagined, he will meet with a success unexpected in common hours.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1756626083275796663"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1759252522533839190"/>
