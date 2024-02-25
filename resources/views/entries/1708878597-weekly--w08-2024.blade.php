@@ -36,4 +36,4 @@
     You are what you do, not what you say you'll do.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1759252522533839190"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1761808330912117081"/>
