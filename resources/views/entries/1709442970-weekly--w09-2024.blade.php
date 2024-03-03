@@ -33,4 +33,4 @@
     Never say you can't do it. Say I haven't done it yet.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1761808330912117081"/>
+<x-join-conversation href="https://twitter.com/merthurturk/status/1764186958966755439"/>
