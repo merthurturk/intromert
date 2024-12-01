@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
 
-    <script src="https://cdn.usefathom.com/script.js" data-site="JXHAIISH" defer></script>
+    <script defer data-domain="intromert.com" src="https://plausible.io/js/script.js"></script>
 
     <script defer src="https://unpkg.com/@alpinejs/ui@3.13.1-beta.0/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/focus@3.13.1/dist/cdn.min.js"></script>
