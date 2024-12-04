@@ -21,6 +21,8 @@ render(fn (View $view) => $view->with('entries', getEntries()));
         </ul>
     </section>
 
+    <x-subscribe-to-newsletter/>
+
     <section>
         <h3>Latest</h3>
         <ul>

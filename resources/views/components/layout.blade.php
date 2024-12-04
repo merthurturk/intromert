@@ -5,6 +5,7 @@
     <title>{{ $title ?? 'Mert Hürtürk' }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @vite('resources/css/app.css')
 
     <script defer data-domain="intromert.com" src="https://plausible.io/js/script.js"></script>

@@ -44,4 +44,7 @@ render(function (View $view, $category, $slug) {
         <p class="text-sm italic">This is published on {{ $entry->publishDate->format('D M d, Y') }} under
             <a href="/entries/{{ $category->slug() }}">{{ $category->title }}</a> category.</p>
     </div>
+
+    <div class="h-5"></div>
+    <x-subscribe-to-newsletter/>
 </x-layout>
