@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @vite('resources/css/app.css')
 
-    <script defer data-domain="intromert.com" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="intromert.com" src="https://plausible.io/js/script.tagged-events.js"></script>
 
     <script defer src="https://unpkg.com/@alpinejs/ui@3.13.1-beta.0/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/focus@3.13.1/dist/cdn.min.js"></script>

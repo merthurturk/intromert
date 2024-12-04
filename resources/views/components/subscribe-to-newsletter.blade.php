@@ -57,6 +57,7 @@
                 const data = await response.json();
 
                 if (response.ok) {
+                    window.plausible('subscribed-to-newsletter');
                     messageDiv.innerHTML = `<div class="text-green-600 font-medium">${data.message}</div>`;
                     form.reset();
                 } else {
