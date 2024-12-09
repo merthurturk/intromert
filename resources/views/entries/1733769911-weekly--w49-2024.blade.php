@@ -30,4 +30,4 @@
     Progress over perfection.
 </x-blockquote>
 
-<x-join-conversation href="https://twitter.com/merthurturk/status/1764186958966755439"/>
+<x-join-conversation href="https://x.com/merthurturk/status/1866205354201120969"/>
