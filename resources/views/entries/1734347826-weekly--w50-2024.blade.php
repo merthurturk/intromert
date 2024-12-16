@@ -26,4 +26,4 @@
     Have no fear of perfection &mdash; you’ll never reach it.
 </x-blockquote>
 
-<x-join-conversation href="https://x.com/merthurturk/status/1866205354201120969"/>
+<x-join-conversation href="https://x.com/merthurturk/status/1868631497193767224"/>
