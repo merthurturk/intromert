@@ -35,18 +35,13 @@ Route::post('/newsletter/subscriptions', function (\Illuminate\Http\Request $req
         // Increment the rate limiter
         RateLimiter::hit($request->ip());
 
-        // Here you would integrate with your newsletter API
-        // $response = NewsletterService::subscribe($request->email);
-
-        $response = Http::withToken(config('services.lindris.key'))
+        Http::withToken(config('services.lindris.key'))
             ->asJson()
             ->acceptJson()
             ->post('https://app.lindris.com/api/people', [
                 'email' => $validated['email'],
                 'tags' => ['source:intromert' => true, 'newsletter:intromert' => true],
             ]);
-
-        Log::info('asdf', $response->json());
 
         return response()->json([
             'message' => 'Thanks! I\'m excited to share my journey with you.'

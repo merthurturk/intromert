@@ -9,13 +9,14 @@
     @vite('resources/css/app.css')
 
     <script defer data-domain="intromert.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
     <script defer src="https://unpkg.com/@alpinejs/ui@3.13.1-beta.0/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/focus@3.13.1/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.13.1/dist/cdn.min.js"></script>
 </head>
 <body class="p-5 md:p-10 bg-white dark:bg-zinc-800">
-<section class="prose dark:prose-invert prose-zinc mx-auto hover:prose-a:text-rose-600">
+<section class="prose dark:prose-invert prose-zinc mx-auto max-w-6xl hover:prose-a:text-rose-600">
     {{ $slot }}
 
     <footer class="mt-10 pb-5">
